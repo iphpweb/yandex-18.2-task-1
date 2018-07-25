@@ -1,10 +1,10 @@
+// кажется этот файл единственный не нуждается в доработке "напильником"
 export function createFilterControl(ymaps) {
   const items = [
     { title: 'Active', value: 'active' },
     { title: 'Defective', value: 'defective' }
   ].map(
-    obj =>
-      new ymaps.control.ListBoxItem({
+    obj => new ymaps.control.ListBoxItem({
         data: { content: obj.title, value: obj.value },
         state: { selected: true }
       })

@@ -15,6 +15,8 @@ exports.initBackendStub = function(app) {
 
     res.json({ ...info, ...details });
 
-    return {};
+    // ну .....
+    //return {};
+    return res;
   });
 };

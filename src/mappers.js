@@ -5,10 +5,12 @@ export function mapServerData(serverData) {
       id: index,
       type: "Feature",
       isActive: obj.isActive,
-      geometry: 
+      geometry:
       {
         type: "Point",
-        coordinates: [obj.long, obj.lat]
+        // очевидно что перепутаны местами, тк все точки оказались в пустынях
+        // далеко далеко
+        coordinates: [obj.lat, obj.long]
       },
       properties: {
         iconCaption: obj.serialNumber
